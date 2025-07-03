@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Flask / Python environment files
+instance/
+*.db
+*.sqlite3
+
+# Logs and local files
+*.log
+*.pot
+*.pyo
+
+# Environment variables
+.env
+*.env
+
+# VS Code / PyCharm / other IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS
+.DS_Stor_

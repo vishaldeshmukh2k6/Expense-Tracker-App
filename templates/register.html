@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="d-flex align-items-center justify-content-center" style="min-height: 75vh;">
+  <div class="card shadow-lg p-4 animate__animated animate__fadeInDown" style="width: 100%; max-width: 400px;">
+    <h3 class="text-center mb-3">Register</h3>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        {{ form.username.label(class="form-label") }}
+        {{ form.username(class="form-control") }}
+      </div>
+      <div class="mb-3">
+        {{ form.password.label(class="form-label") }}
+        {{ form.password(class="form-control") }}
+      </div>
+      <button type="submit" class="btn btn-success w-100">{{ form.submit.label.text }}</button>
+    </form>
+    <p class="text-center mt-3">Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+  </div>
+</div>
+{% endblock %}
