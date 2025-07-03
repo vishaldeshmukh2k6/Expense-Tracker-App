@@ -17,3 +17,4 @@ class TransactionForm(FlaskForm):
     type = SelectField('Type', choices=[('income', 'Income'), ('expense', 'Expense')])
     description = StringField('Description')
     submit = SubmitField('Add')
+
